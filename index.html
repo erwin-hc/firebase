@@ -29,18 +29,15 @@
         <div class="modal-header"><h3 style = "text-transform:uppercase;">Novo usuário</h3></div>
         <div class="modal-body">
           <form class="form" autocomplete="off">
-            <input style = "text-transform:uppercase;" type="text" name="firstName" placeholder="Nome">
-              <input style = "text-transform:uppercase;" type="text" 
-              name="phone" 
-              placeholder="Telefone"
-              >
+            <input id="txtNome" style = "text-transform:uppercase;" type="text" name="firstName" placeholder="Nome">
+              <input style = "text-transform:uppercase;" type="text" name="phone" placeholder="Telefone">
             <input style = "text-transform:lowercase;" type="email" name="email" placeholder="Email">
             <button class="btn btn-modal">Cadastrar</button>
           </form>
         </div>
       </div>
     </div>
-
+      
     <!-- Edit Modal -->
     <div class="edit-modal modal-wrapper">
       <div class="modal">
@@ -81,6 +78,10 @@
     const db = firebase.firestore();
   
   </script>
+
+
+
+
   <script src="./script.js"></script>
 </body>
 </html>
