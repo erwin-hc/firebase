@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: calc(8px + .5vw);
+  /* font-size: calc(6px + .5vw); */
 }
 
 body {
@@ -20,8 +20,8 @@ body {
 
 .container {
   background: #fafafa;
-  max-width: 90vw;
-  margin: .5rem auto;
+  max-width: 1200px;
+  margin: 0 auto;
   padding-bottom: 2rem;
   -webkit-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
@@ -40,8 +40,8 @@ header h3 {
 }
 
 .table-users {
+  width: 100%;
   background: #fafafa;
-  width: 90%;
   margin: 2rem auto;
   border-collapse: collapse;
 }
@@ -89,7 +89,11 @@ header h3 {
 }
 
 .table-wrapper {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .btn-add {
@@ -162,5 +166,24 @@ input {
   outline: none;
 }
 
-
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+	table, thead, tbody, td, tr { 
+		display: block; 
+  }	
+  th {
+    display: none;
+  }	
+	tr {     
+    border-bottom: 15px solid #fff;    
+  }
+	td { 
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;   
+    background-color:rgb(230, 227, 227);
+		border: none;
+		position: relative;       
+	}
+}
 
