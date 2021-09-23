@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #181818;
-  --secondary-color: #ff816c;
+  --secondary-color: tomato;
 }
 
 * {
@@ -166,8 +166,7 @@ input {
   outline: none;
 }
 
-@media 
-only screen and (max-width: 760px),
+@media only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 	table, thead, tbody, td, tr { 
 		display: block; 
